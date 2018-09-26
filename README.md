@@ -2,6 +2,8 @@
 
 this project allows to manage user.
 
+* [Project](https://github.com/bouhlelhichem/TestAirFrance) - is available on Git 
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.

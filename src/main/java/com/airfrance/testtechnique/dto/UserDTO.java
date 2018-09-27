@@ -39,7 +39,14 @@ public class UserDTO {
 	private Date dateRegistration;
 
 	/**
-	 * Class constructor.
+	 * Class constructor for user DTO.
+	 * 
+	 * @param firstName
+	 * @param lastName
+	 * @param phoneNumber
+	 * @param birthDay
+	 * @param address
+	 * @param dateRegistration
 	 */
 	public UserDTO(@NotNull(message = "firstName is a required field") String firstName,
 			@NotNull(message = "lastName is a required field") String lastName, String phoneNumber,

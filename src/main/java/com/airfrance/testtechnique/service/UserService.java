@@ -31,7 +31,7 @@ public class UserService {
 	/**
 	 * Find all user persisted in database.
 	 * 
-	 * @return List<UserDTO>
+	 * @return List<?>
 	 */
 	public List<UserDTO> getAll() {
 		Long startTime = Instant.now().toEpochMilli();

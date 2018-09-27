@@ -42,9 +42,8 @@ public class UserController {
 	/**
 	 * This action will get the all entity.
 	 * 
-	 * @return List<UserDTO>
+	 * @return List
 	 */
-
 	@GetMapping("/user")
 	public List<UserDTO> retrieveAllUsers() {
 		return userService.getAll();
@@ -53,11 +52,11 @@ public class UserController {
 	/**
 	 * This action will Create a new user.
 	 * 
-	 * @param userDto
-	 * @param bindingResult
-	 * @return ResponseEntity<UserDTO>
-	 * @throws MethodArgumentNotValidException
-	 * @throws URISyntaxException
+	 * @param userDto object user
+	 * @param bindingResult binding Result
+	 * @return ResponseEntity
+	 * @throws URISyntaxException  URI Syntax Exception
+	 * @throws MethodArgumentNotValidException When we have an error in binding result
 	 */
 	@PostMapping("/addUser")
 	public ResponseEntity<UserDTO> createUser(@Valid @RequestBody UserDTO userDto, BindingResult bindingResult)
@@ -79,7 +78,7 @@ public class UserController {
 	/**
 	 * This action will get the entity with the given ID.
 	 * 
-	 * @param userId
+	 * @param userId id of user.
 	 * @return UserDTO
 	 */
 	@GetMapping(path = "/users/{userId}", produces = { MediaType.APPLICATION_JSON_VALUE })
